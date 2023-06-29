@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PROGRAMA INSTITUCIONAL DE TUTORIAS VALLEJO</title>
+  <link rel="stylesheet" href="/Styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gravitas+One&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+  <link rel="icon" href="/Images/PIA.ico">
+</head>
+<body>
+  <div class="overlay">
+    <header>
+      <div class="Tutorias">
+        <h1>PROGRAMA INSTITUCIONAL DE TUTORIAS VALLEJO</h1>
+      </div>
+      <div class="Escudos">
+        <div class="Escudo1">
+          <a href="https://www.unam.mx/">
+            <img src="/Images/Escudo_UNAM.png" alt="Escudo UNAM">
+          </a>
+        </div>
+        <div class="Escudo2">
+          <a href="https://cch-vallejo.unam.mx/">
+            <img src="/Images/Escudo_CCH.png" alt="Escudo CCH">
+          </a>
+        </div>
+      </div>
+    </header>
+  
+    <div class="Contenido">
+      <h2 class="slide-in">Material Educativo</h2>
+      <h4>En esta sección encontrarás material educativo que te ayudará como profesor, donde podrás apoyarte y brindar apoyo a los alumnos. Y como alumno encontrarás herramientas que te servirán a lo largo de tus cursos</h4>
+  
+      <div>
+        <button type="button" class="button-contenido1">
+          <a href="/Material_Educativo/MaterialEducativo.html" class="link">
+            <h5>Descubrir</h5>
+          </a>
+        </button>
+      </div>
+    </div>
+  
+    <div class="contenido2">
+      <h2 class="slide-in2">Citas y Anuncios</h2>
+      <h4>En esta sección encontrarás información importante para padres y alumnos. También encontrarás anuncios del Programa Institucional de Tutorías del Plantel Vallejo. Además, podrás consultar la disponibilidad de una cita con la responsable del programa</h4>
+      <div>
+          <button type="button">
+            <a href="/Anuncios/Anuncios.html" class="link">
+              <h5>Descubrir</h5>
+            </a>
+          </button>
+        </a>
+      </div>
+    </div>
+  
+  </div>
+  
+  <div id="hero1" class="hero"></div>
+  <div id="hero2" class="hero"></div>
+  
+  <script>
+    // JavaScript para el slider
+    const heroes = document.querySelectorAll('.body');
+    let activeHeroIndex = 0;
+  
+    setInterval(() => {
+      heroes[activeHeroIndex].classList.remove('active');
+      activeHeroIndex = (activeHeroIndex + 1) % heroes.length;
+      heroes[activeHeroIndex].classList.add('active');
+    }, 5000);
+  </script>
+  
+  <script src="/script.js"></script>
+  
+</body>
+</html>

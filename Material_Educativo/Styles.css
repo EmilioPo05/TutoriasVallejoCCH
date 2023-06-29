@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Gravitas+One&family=Open+Sans:wght@300&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+header {
+  background-color: #063444;
+  padding: 1rem;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.2rem;
+  line-height: 2.625rem;
+  font-family: "Gravitas One";
+  cursor: pointer;
+}
+
+.link {
+  color: white;
+  text-decoration: none;
+}
+
+header .imagenes {
+  display: flex;
+  align-items: center;
+}
+
+header img {
+  max-height: 4rem;
+  margin-left: 0.625rem;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+#contenido {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1.25rem;
+  margin-left: 5vh;
+}
+
+#contenido div {
+  flex: 1 1 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem; /* Agregamos margen inferior */
+}
+
+#contenido img {
+  width: 90%;
+  height: auto;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+#contenido .texto {
+  text-align: justify;
+}
+
+#contenido .texto p {
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 48rem) {
+  header {
+    padding: 1.25rem 0.625rem;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  header h1 {
+    font-size: 2.625rem;
+    line-height: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  header img {
+    max-height: 3rem;
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  #contenido div {
+    flex-basis: 100%;
+    margin: 0; /* Quitamos el margen inferior */
+  }
+
+  #contenido img {
+    width: 100%;
+  }
+
+  #contenido .texto {
+    width: 100%;
+    margin: 0;
+    padding: 0 1rem;
+  }
+
+  #contenido .texto h2{
+    margin-left: 0;
+  }
+}
+
+#contenido img:hover {
+  transform: scale(1.1);
+  transition: 2s;
+}
+
+#contenido .texto {
+  text-align: justify;
+  font-family: "Open Sans";
+  width: 80%;
+  margin-left: -9vh;
+}
+
+#contenido .texto h2{
+  margin-left: 3vh;
+  font-family: "Gravitas One";
+  color: #063444;
+}
+
+/*Scroll*/
+body::-webkit-scrollbar {
+  width: 7px;
+  background-color: black;
+  border-radius: 10%;
+}
